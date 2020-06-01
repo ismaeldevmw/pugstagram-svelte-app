@@ -1,3 +1,8 @@
+<script>
+	export let nickname;
+	export let name;
+</script>
+
 <style>
 	.Profile-content {
 		display: flex;
@@ -29,8 +34,8 @@
 			<img src="https://ismaeldevloop.com/assets/img/team-black.jpg" alt="Avatar">
 		</div>
 		<div class="Profile-info">
-			<h2>ismaeldevloop</h2>
-			<span>Ismael López</span>
+			<h2>{nickname}</h2>
+			<span>{name}</span>
 		</div>
 	</div>
 </div>
