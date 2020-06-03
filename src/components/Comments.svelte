@@ -64,9 +64,6 @@
 		cursor: pointer;
 		background: transparent;
 	}
-	label {
-		display: none;
-	}
 </style>
 
 <div class="Comments">
