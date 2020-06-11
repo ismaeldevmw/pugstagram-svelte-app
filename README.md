@@ -29,3 +29,9 @@ To create an optimised version of the app:
 ```bash
 npm run build
 ```
+
+## New libraries installed
+```bash
+npm install sapper --save-dev
+npm install polka compression sirv
+```
