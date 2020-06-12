@@ -23,7 +23,7 @@ module.exports = {
             loader: 'svelte-loader',
             options: {
               dev,
-              hydrateble: true,
+              hydratable: true,
               hotReload: false
             }
           }
@@ -39,12 +39,13 @@ module.exports = {
     ].filter(Boolean),
     devtool: dev && 'inline-source-map'
   },
+
   server: {
     entry: config.server.entry(),
     output: config.server.output(),
     target: 'node',
     resolve: { alias, extensions, mainFields },
-    externals: Object.keys(pkd.dependencies).concat('encoding'),
+    externals: Object.keys(pkg.dependencies).concat('encoding'),
     module: {
       rules: [
         {
@@ -64,5 +65,5 @@ module.exports = {
     performance: {
       hints: false
     }
-  }
-}
+  },
+};

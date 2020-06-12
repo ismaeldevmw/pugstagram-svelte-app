@@ -1,3 +1,4 @@
+// @ts-check
 import App from './containers/App.svelte';
 
 const app = new App({
